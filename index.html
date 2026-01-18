@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Nimue Gelateria — Gelato artigianale & Nimue AI</title>
+  <meta name="description" content="Nimue Gelateria: gelato artigianale, ingredienti selezionati e metodo professionale. Scopri anche Nimue Gelato AI per creare ricette bilanciate." />
+
+  <!-- SEO / Social preview -->
+  <link rel="canonical" href="https://nimuegelateria.com/" />
+  <meta property="og:title" content="Nimue Gelateria — Gelato artigianale & Nimue AI" />
+  <meta property="og:description" content="Gelato artigianale, ingredienti selezionati e metodo professionale. Prova Nimue Gelato AI per ricette bilanciate." />
+  <meta property="og:url" content="https://nimuegelateria.com/" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top" aria-label="Nimue Gelateria">
+        <span class="logo-mark">N</span>
+        <span class="logo-text">
+          <strong>Nimue</strong><span> Gelateria</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navigazione">
+        <a href="#gelato">Il gelato</a>
+        <a href="#laboratorio">Laboratorio</a>
+        <a href="#vetrina">Vetrina</a>
+        <a href="#ai">Nimue AI</a>
+        <a href="#contatti" class="nav-btn">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO con SFONDO -->
+    <section class="hero hero--bg" aria-label="Hero">
+      <!-- cambia qui il background se vuoi usare un altro file -->
+      <div class="hero-bg" style="background-image:url('assets/foto.jpg');"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="kicker">Gelato artigianale • ingredienti selezionati • metodo</p>
+
+          <h1 class="hero-title">
+            Il gelato come dovrebbe essere:<br>
+            semplice, pulito, bilanciato.
+          </h1>
+
+          <p class="lead">
+            Nimue nasce dal laboratorio: attenzione ai dettagli, alla materia prima e al bilanciamento.
+            Tradizione artigiana, con uno sguardo moderno.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="#gelato">Scopri di più</a>
+            <a class="btn ghost" href="https://app.nimuegelateria.com" target="_blank" rel="noopener">
+              Prova Nimue AI
+            </a>
+          </div>
+
+          <div class="badges">
+            <div class="badge">
+              <span class="b-title">Esperienza</span>
+              <span class="b-sub">metodo e produzione reale</span>
+            </div>
+            <div class="badge">
+              <span class="b-title">Stagionalità</span>
+              <span class="b-sub">gusti che cambiano</span>
+            </div>
+            <div class="badge">
+              <span class="b-title">Precisione</span>
+              <span class="b-sub">equilibrio zuccheri/solidi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GELATO -->
+    <section id="gelato" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Gelato artigianale</h2>
+          <p>
+            Un gelato buono non è “dolce e basta”. È equilibrio: acqua, zuccheri, grassi, solidi.
+            È texture, pulizia in bocca e gusto vero.
+          </p>
+        </div>
+
+        <div class="grid3">
+          <article class="tile">
+            <h3>Ingredienti</h3>
+            <p>Selezione attenta e ricette pulite. Meno “effetti speciali”, più sostanza.</p>
+          </article>
+          <article class="tile">
+            <h3>Bilanciamento</h3>
+            <p>Controllo di solidi e zuccheri per evitare ghiaccio, eccesso di dolcezza, instabilità.</p>
+          </article>
+          <article class="tile">
+            <h3>Stagioni</h3>
+            <p>I gusti seguono il periodo: frutta quando è buona, creme quando serve comfort.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OGGI IN VETRINA -->
+    <section id="vetrina" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Oggi in vetrina</h2>
+          <p>
+            Una selezione che cambia con la stagionalità e con quello che troviamo di davvero buono.
+            <span class="muted">Aggiornato: <span id="vetrina-date"></span></span>
+          </p>
+        </div>
+
+        <div class="vetrina-grid">
+          <!-- CARD GUSTO -->
+           <!--
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Pistacchio</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Intenso, tostato, bilanciato. Morbido e persistente.<br><strong>Allergeni: latte e derivati, frutta a guscio.</strong> </p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Stracciatella</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Fior di latte con cioccolato fondente in scaglie sottili.<br><strong>Allergeni: latte e derivati.</strong></p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Nocciola</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Nocciola vera, gusto pulito e rotondo. <strong>Allergeni: latte e derivati, frutta a guscio.</strong></p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Limone</h3>
+              <span class="tag tag--fruit">Frutta</span>
+            </div>
+            <p class="gusto-desc">Fresco, agrumato, perfetto dopo cena. <strong>Allergeni: nessuno.</strong></p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Fragola</h3>
+              <span class="tag tag--fruit">Frutta</span>
+            </div>
+            <p class="gusto-desc">Solo quando la fragola è davvero buona. Altrimenti no.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Cioccolato Fondente</h3>
+              <span class="tag">Base acqua</span>
+            </div>
+            <p class="gusto-desc">Cacao deciso, finale lungo, dolcezza controllata.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Pistacchio</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Intenso, tostato, bilanciato. Morbido e persistente.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Stracciatella</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Fior di latte con cioccolato fondente in scaglie sottili.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Nocciola</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Nocciola vera, gusto pulito e rotondo.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Limone</h3>
+              <span class="tag tag--fruit">Sorbetto</span>
+            </div>
+            <p class="gusto-desc">Fresco, agrumato, perfetto dopo cena.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Fragola</h3>
+              <span class="tag tag--fruit">Frutta</span>
+            </div>
+            <p class="gusto-desc">Solo quando la fragola è davvero buona. Altrimenti no.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Cioccolato Fondente</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Cacao deciso, finale lungo, dolcezza controllata.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Pistacchio</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Intenso, tostato, bilanciato. Morbido e persistente.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Stracciatella</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Fior di latte con cioccolato fondente in scaglie sottili.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Nocciola</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Nocciola vera, gusto pulito e rotondo.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Limone</h3>
+              <span class="tag tag--fruit">Sorbetto</span>
+            </div>
+            <p class="gusto-desc">Fresco, agrumato, perfetto dopo cena.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Fragola</h3>
+              <span class="tag tag--fruit">Frutta</span>
+            </div>
+            <p class="gusto-desc">Solo quando la fragola è davvero buona. Altrimenti no.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Cioccolato Fondente</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Cacao deciso, finale lungo, dolcezza controllata.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Pistacchio</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Intenso, tostato, bilanciato. Morbido e persistente.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Stracciatella</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Fior di latte con cioccolato fondente in scaglie sottili.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Nocciola</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Nocciola vera, gusto pulito e rotondo.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Limone</h3>
+              <span class="tag tag--fruit">Sorbetto</span>
+            </div>
+            <p class="gusto-desc">Fresco, agrumato, perfetto dopo cena.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Fragola</h3>
+              <span class="tag tag--fruit">Frutta</span>
+            </div>
+            <p class="gusto-desc">Solo quando la fragola è davvero buona. Altrimenti no.</p>
+          </article>
+
+          <article class="gusto">
+            <div class="gusto-top">
+              <h3 class="gusto-name">Cioccolato Fondente</h3>
+              <span class="tag">Crema</span>
+            </div>
+            <p class="gusto-desc">Cacao deciso, finale lungo, dolcezza controllata.</p>
+          </article>
+        </div>
+        -->
+      
+        <div class="mini-cta">
+          <p class="note">Vuoi sapere i gusti di domani? Seguici sui social o scrivici.</p>
+          <a class="btn ghost" href="#contatti">Contattaci</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- LAB -->
+    <section id="laboratorio" class="section soft">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Dal laboratorio nasce tutto</h2>
+          <p>
+            Metodo, ordine, temperature, maturazione, mantecazione: sono dettagli invisibili,
+            ma fanno la differenza tra un gelato “ok” e un gelato memorabile.
+          </p>
+        </div>
+
+        <div class="grid2">
+          <div class="panel">
+            <h3>Processo</h3>
+            <ul>
+              <li>Controllo acqua / solidi</li>
+              <li>Gestione zuccheri e punto di congelamento</li>
+              <li>Texture stabile e pulita</li>
+              <li>Ripetibilità (sempre uguale, sempre buono)</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Piccola nota</h3>
+            <p class="muted">
+               Nimue nasce da oltre vent’anni di lavoro reale in laboratorio.
+                Un percorso costruito su produzione quotidiana, studio degli ingredienti
+                e attenzione costante al bilanciamento del gelato.
+                L’obiettivo è sempre lo stesso: un gelato artigianale pulito,
+                equilibrato e coerente, senza compromessi.
+            </p>
+            <div class="mini-cta">
+              <a class="btn ghost full" href="#contatti">Inserisci contatti e info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI (qui spostiamo la card) -->
+    <section id="ai" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Nimue Gelato AI</h2>
+          <p>
+            Un ponte tra artigianalità e digitale: l’app ti aiuta a costruire ricette più bilanciate,
+            con tabelle ingredienti e profili/metodi.
+          </p>
+        </div>
+
+        <div class="ai-grid">
+          <div class="ai-box">
+            <div class="ai-left">
+              <h3>Cosa fa</h3>
+              <ul class="bullets">
+                <li>Ricetta per gusto e kg</li>
+                <li>Tabella ingredienti (g)</li>
+                <li>Profili / metodi</li>
+                <li>PDF opzionale con procedura e variazioni</li>
+              </ul>
+            </div>
+            <div class="ai-right">
+              <p class="muted">
+                Inserisci gusto e quantità, genera e confronta. Semplice, veloce, chiaro.
+              </p>
+              <a class="btn secondary full" href="https://app.nimuegelateria.com" target="_blank" rel="noopener">
+                Apri l’app
+              </a>
+              <p class="note">Suggerimento: prova “Vaniglia” (1 kg).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section id="contatti" class="section soft">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Contatti</h2>
+          <p>Gelateria Nimue, piazza Maria Leone, 03047 San Giorgio a Liri (FR)<br>Orari<br>Temporaneamente Chiuso.</p>
+        </div>
+
+        <div class="contact">
+          <div class="c-item">
+            <span class="c-label">Email</span>
+            <a class="c-link" href="mailto:support@nimuegelateria.com">support@nimuegelateria.com</a>
+          </div>
+          <div class="c-item">
+            <span class="c-label">App</span>
+            <a class="c-link" href="https://app.nimuegelateria.com" target="_blank" rel="noopener">app.nimuegelateria.com</a>
+          </div>
+          <div class="c-item">
+            <span class="c-label">Social</span>
+            <div class="chips">
+              <a class="chip" href="@nimuegelateria" aria-disabled="false">Instagram</a>
+              <a class="chip" href="https://www.facebook.com/nimuegelateria" aria-disabled="false">Facebook</a>
+              <a class="chip" href="https://it.pinterest.com/043cfs69lkjwxulnrj02m31bpaeto2/_created/" aria-disabled="false">Pinterest</a>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          © <span id="y"></span> Nimue Gelateria — Tutti i diritti riservati.
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    const d = new Date();
+    const fmt = new Intl.DateTimeFormat("it-IT", { day: "2-digit", month: "long", year: "numeric" });
+    const v = document.getElementById("vetrina-date");
+    if (v) v.textContent = fmt.format(d);
+  </script>
+
+</body>
+</html>
