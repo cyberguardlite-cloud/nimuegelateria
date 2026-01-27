@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="it">
 <head>
@@ -32,6 +33,7 @@
         <a href="#laboratorio">Laboratorio</a>
         <a href="#vetrina">Vetrina</a>
         <a href="#ai">Nimue AI</a>
+        <a href="#shop">Shop</a>
         <a href="#contatti" class="nav-btn">Contatti</a>
       </nav>
     </div>
@@ -316,12 +318,15 @@
             </div>
             <p class="gusto-desc">Cacao deciso, finale lungo, dolcezza controllata.</p>
           </article>
-        </div>
         -->
+          </div>
       
-        <div class="mini-cta">
-          <p class="note">Vuoi sapere i gusti di domani? Seguici sui social o scrivici.</p>
-          <a class="btn ghost" href="#contatti">Contattaci</a>
+        <div class="panel" style="margin-top:16px;">
+          <h3 style="margin-top:0;">Riapertura</h3>
+          <p class="muted" style="margin-bottom:0;">
+            Al momento la gelateria è temporaneamente chiusa. Per aggiornamenti e informazioni,
+            scrivici o seguici sui social.
+          </p>
         </div>
       </div>
     </section>
@@ -365,7 +370,7 @@
       </div>
     </section>
 
-    <!-- AI (qui spostiamo la card) -->
+    <!-- AI (immagine a sinistra + contenuto a destra) -->
     <section id="ai" class="section">
       <div class="wrap">
         <div class="section-head">
@@ -376,30 +381,103 @@
           </p>
         </div>
 
-        <div class="ai-grid">
+        <div class="grid2 ai-split">
+          <!-- SINISTRA: immagine app -->
+          <div class="ai-media">
+            <img
+              src="assets/img/app.png"
+              alt="Nimue Gelato Artigianale — AI Studio"
+              class="ai-shot"
+            />
+          </div>
+
+          <!-- DESTRA: box contenuto -->
           <div class="ai-box">
             <div class="ai-left">
-              <h3>Cosa fa</h3>
-              <ul class="bullets">
-                <li>Ricetta per gusto e kg</li>
-                <li>Tabella ingredienti (g)</li>
-                <li>Profili / metodi</li>
-                <li>PDF opzionale con procedura e variazioni</li>
-              </ul>
-            </div>
-            <div class="ai-right">
-              <p class="muted">
-                Inserisci gusto e quantità, genera e confronta. Semplice, veloce, chiaro.
-              </p>
-              <a class="btn secondary full" href="https://app.nimuegelateria.com" target="_blank" rel="noopener">
-                Apri l’app
-              </a>
-              <p class="note">Suggerimento: prova “Vaniglia” (1 kg).</p>
+              <h3>Come funziona</h3>
+                <ul class="bullets">
+                  <li>Genera una ricetta partendo da gusto e quantità</li>
+                  <li>Calcola automaticamente gli ingredienti (in grammi)</li>
+                  <li>Applica profili e metodi di lavorazione</li>
+                  <li>Esporta un PDF con procedura e variazioni (opzionale)</li>
+                </ul>
+
+                <p class="muted">
+                  Inserisci i dati, confronta le soluzioni, scegli quella più adatta.<br>
+                  <strong>Metodo chiaro, risultati coerenti.</strong>
+                </p>
+
+                <a class="btn secondary full" href="https://app.nimuegelateria.com" target="_blank" rel="noopener">
+                  Apri l’app
+                </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
+    <!-- SHOP -->
+    <section id="shop" class="section soft">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Shop</h2>
+          <p>
+            <strong>Il metodo del gelato artigianale spiegato con chiarezza.</strong><br>
+            Un manuale pratico per ottenere risultati puliti, bilanciati e ripetibili, anche a casa.
+          </p>
+        </div>
+
+        <div class="grid2 shop-grid">
+          <!-- SINISTRA: COPERTINA -->
+          <div class="panel shop-cover">
+            <img
+              src="assets/img/copertina.png"
+              alt="Gelato in Cucina — Libro PDF"
+              class="book-cover"
+            />
+          </div>
+
+          <!-- DESTRA: ACQUISTO -->
+          <div class="panel shop-buy">
+            <h3>Gelato in Cucina — Libro PDF</h3>
+            <p class="muted">
+              Un manuale pratico: basi, bilanciamento, metodo e ricette pensate con logica professionale.
+              Ideale per appassionati e per chi vuole risultati più puliti e stabili.
+            </p>
+
+            <ul>
+              <li>Formato: PDF (alta qualità)</li>
+              <li>Accesso: download immediato</li>
+              <li>Compatibile: smartphone / tablet / PC</li>
+            </ul>
+
+            <div class="price-row">
+              <div class="price">€12,90</div>
+              <div class="muted">IVA inclusa</div>
+            </div>
+
+            <div class="mini-cta" style="margin-top:16px; display:flex; flex-direction:column; gap:12px;">
+
+              <!-- Pulsante Amazon -->
+             <div class="mini-cta" style="margin-top:16px;">
+                <a class="btn amazon full"
+                  href="https://www.amazon.it/s?i=digital-text&search-alias=digital-text&field-author=Nimue"
+                  target="_blank"
+                  rel="noopener">
+                  Acquista su Amazon
+                </a>
+
+                <p class="note" style="margin-top:10px;">
+                  Formato digitale – accesso immediato tramite Amazon
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- CONTATTI -->
     <section id="contatti" class="section soft">
@@ -421,7 +499,7 @@
           <div class="c-item">
             <span class="c-label">Social</span>
             <div class="chips">
-              <a class="chip" href="@nimuegelateria" aria-disabled="false">Instagram</a>
+              <a class="chip" href="https://www.instagram.com/nimuegelateria/" target="_blank" rel="noopener">Instagram</a>
               <a class="chip" href="https://www.facebook.com/nimuegelateria" aria-disabled="false">Facebook</a>
               <a class="chip" href="https://it.pinterest.com/043cfs69lkjwxulnrj02m31bpaeto2/_created/" aria-disabled="false">Pinterest</a>
             </div>
