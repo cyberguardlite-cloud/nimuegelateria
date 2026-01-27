@@ -84,6 +84,22 @@ a{text-decoration:none;color:inherit}
 .btn:hover{transform: translateY(-1px)}
 .btn:active{transform: translateY(0)}
 
+/* Ghost fuori HERO: leggibile su sfondo chiaro */
+.btn.ghost{
+  background: #fff;
+  border-color: var(--line);
+  color: var(--ink);
+  backdrop-filter: none;
+}
+
+/* Ghost dentro HERO: resta bianco */
+.hero .btn.ghost{
+  background: rgba(255,255,255,.14);
+  border-color: rgba(255,255,255,.35);
+  color:#fff;
+  backdrop-filter: blur(6px);
+}
+
 /* HERO con background */
 .hero{
   padding: 68px 0 52px;
@@ -184,13 +200,7 @@ a{text-decoration:none;color:inherit}
 .panel li{margin:8px 0}
 .muted{color:var(--muted);font-weight:650}
 
-/* AI area */
-.ai-grid{
-  display:grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap:14px;
-  align-items:stretch;
-}
+
 .ai-box{
   display:grid;grid-template-columns: 1.1fr .9fr;
   gap:14px;
@@ -301,4 +311,167 @@ a{text-decoration:none;color:inherit}
 }
 @media (max-width: 560px){
   .vetrina-grid{ grid-template-columns:1fr; }
+}
+/* SHOP cover + layout */
+/* SHOP */
+.shop-grid{
+  align-items: stretch;
+}
+
+.shop-grid .panel{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Colonna copertina pulita (niente box) */
+.shop-cover{
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-cover::before,
+.shop-cover::after{
+  display: none !important;
+  content: none !important;
+}
+
+.book-cover{
+  display: block;
+  width: min(360px, 100%);
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 22px 45px rgba(0,0,0,.18);
+  background: transparent;
+  transform: translateY(-6px);
+}
+
+/* Prezzo */
+.price-row{
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.price-row .price{
+  font-size: 28px;
+  font-weight: 800;
+}
+/* AI split: immagine a sinistra + box a destra */
+.ai-split {
+  align-items: center;
+}
+
+/* contenitore immagine pulito */
+.ai-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* screenshot app */
+.ai-shot {
+  width: min(520px, 100%);
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 22px 45px rgba(0,0,0,.16);
+  display: block;
+}
+
+
+/* AI split: colonne della stessa altezza */
+.ai-split{
+  align-items: stretch;
+}
+
+/* Colonna sinistra (immagine) */
+.ai-media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Colonna destra (testo) */
+.ai-box{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Screenshot */
+.ai-shot{
+  max-width: 520px;
+  width: 100%;
+  height: auto;
+}
+.btn.amazon{
+  background: #FFD814;        /* giallo Amazon */
+  color: #111;
+  font-weight: 900;
+  font-size: 14.5px;
+  border-radius: 14px;
+  padding: 14px 20px;
+  text-align: center;
+  border: 1px solid #FCD200;
+  box-shadow: 0 6px 14px rgba(0,0,0,.12);
+}
+
+.btn.amazon:hover{
+  background: #F7CA00;
+  border-color: #F2C200;
+  transform: translateY(-1px);
+}
+
+.btn.amazon:active{
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0,0,0,.12);
+}
+.vetrina-empty{
+  margin-top: 16px;
+}
+/* AI: due card identiche (stessa altezza, stesso stile) */
+.ai-split{
+  align-items: stretch;
+}
+
+/* Rendiamo ai-media una card come ai-box */
+.ai-media{
+  background: linear-gradient(180deg, #fff, rgba(255,255,255,.72));
+  border: 1px solid rgba(255,138,42,.28);
+  border-radius: var(--r);
+  box-shadow: 0 14px 34px rgba(0,0,0,.06);
+  padding: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* ai-box già card: forziamo altezza e distribuzione contenuti */
+.ai-box{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Immagine dentro la card */
+.ai-shot{
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display: block;
+}
+.ai-shot{
+  max-width: 560px;
 }
